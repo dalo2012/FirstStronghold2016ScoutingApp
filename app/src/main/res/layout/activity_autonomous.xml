@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:counter="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.davidreetz.firststronghold2016scoutingapp.Autonomous">
+
+    <ImageView
+        android:id="@+id/imgHalfFieldAuto"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/imgHalfFieldAuto"
+        android:src="@drawable/red_half" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgHalfFieldAuto"
+        android:layout_alignRight="@+id/imgHalfFieldAuto"
+        android:layout_alignTop="@+id/imgHalfFieldAuto"
+        android:layout_alignBottom="@+id/imgHalfFieldAuto"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:focusable="false">
+
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="500dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="100dp">
+
+            <TextView
+                android:id="@+id/Obstacle1Auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RBObstacleAuto"
+                android:textColor="#FFFFFF"
+                android:layout_below="@+id/IMGEmpty1Auto"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/Obstacle2Auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RBObstacleAuto"
+                android:textColor="#FFFFFF"
+                android:layout_alignTop="@+id/Obstacle4Auto"
+                android:layout_alignLeft="@+id/IMGEmpty1Auto"
+                android:layout_alignStart="@+id/IMGEmpty1Auto" />
+
+            <TextView
+                android:id="@+id/Obstacle3Auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RBObstacleAuto"
+                android:textColor="#FFFFFF"
+                android:layout_below="@+id/IMGEmpty1Auto"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/Obstacle4Auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RBObstacleAuto"
+                android:textColor="#FFFFFF"
+                android:layout_above="@+id/IMGEmpty2Auto"
+                android:layout_toLeftOf="@+id/IMGEmpty4Auto"
+                android:layout_toStartOf="@+id/IMGEmpty4Auto" />
+
+
+            <TextView
+                android:id="@+id/BObstacle5Auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RBObstacleAuto"
+                android:textColor="#FFFFFF"
+                android:layout_below="@+id/IMGEmpty3Auto"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:id="@+id/IMGLoBarAuto"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/low_bar"
+                android:layout_marginBottom="138dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/IMGEmpty1Auto"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignBottom="@+id/IMGLoBarAuto"
+                android:layout_toRightOf="@id/IMGLoBarAuto" />
+
+            <ImageView
+                android:id="@+id/IMGEmpty2Auto"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignBottom="@+id/IMGEmpty1Auto"
+                android:layout_toRightOf="@+id/IMGEmpty1Auto" />
+
+            <ImageView
+                android:id="@+id/IMGEmpty3Auto"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignBottom="@+id/IMGEmpty2Auto"
+                android:layout_toRightOf="@+id/IMGEmpty2Auto" />
+
+            <ImageView
+                android:id="@+id/IMGEmpty4Auto"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignBottom="@+id/IMGEmpty3Auto"
+                android:layout_toRightOf="@+id/IMGEmpty3Auto" />
+
+            <CheckBox
+                android:id="@+id/CBShotHiGoalAuto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff00"
+                android:text="@string/CBShotHighGoalAuto"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <CheckBox
+                android:id="@+id/CBShotLowGoalAuto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff00"
+                android:text="@string/CBShotLowGoalAuto"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Show"
+                android:id="@+id/RBNoShow"
+                android:background="#0000ff"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/RBSpyBot" />
+
+            <RadioButton
+                android:id="@+id/RBSpyBot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentLeft="true"
+                android:text="@string/RBSpyBot"
+                android:background="#ff0000ff" />
+
+            <RadioButton
+                android:id="@+id/RBPositionLeft"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#ff0000ff"
+                android:text="1 "
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/Obstacle1Auto"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioButton
+                android:id="@+id/RBPositionMidLeft"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#ff0000ff"
+                android:text="2 "
+                android:layout_marginLeft="32dp"
+                android:layout_below="@+id/Obstacle1Auto"
+                android:layout_toRightOf="@+id/RBPositionLeft"
+                android:layout_toEndOf="@+id/RBPositionLeft" />
+
+            <RadioButton
+                android:id="@+id/RBPositionMid"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#ff0000ff"
+                android:text="3 "
+                android:layout_marginLeft="32dp"
+                android:layout_below="@+id/Obstacle3Auto"
+                android:layout_toRightOf="@+id/RBPositionMidLeft"
+                android:layout_toEndOf="@+id/RBPositionMidLeft" />
+
+            <RadioButton
+                android:id="@+id/RBPositionMidRight"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#ff0000ff"
+                android:text="4 "
+                android:layout_marginLeft="32dp"
+                android:layout_alignTop="@+id/RBPositionMid"
+                android:layout_toRightOf="@+id/RBPositionMid"
+                android:layout_toEndOf="@+id/RBPositionMid" />
+
+            <RadioButton
+                android:id="@+id/RBPositionRight"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#ff0000ff"
+                android:layout_marginLeft="32dp"
+                android:text="5 "
+                android:layout_alignTop="@+id/RBPositionMidRight"
+                android:layout_toRightOf="@+id/RBPositionMidRight"
+                android:layout_toEndOf="@+id/RBPositionMidRight" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/RGKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000ff"
+            android:text="@string/RadioKeyPosition"
+            android:clickable="false"
+            android:checked="true" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/BToTeleop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="50dp"
+        android:text="@string/BToTeleop" />
+    <CheckBox
+        android:id="@+id/CBMissHiAuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miss High" />
+
+    <CheckBox
+        android:id="@+id/CBMissLoAuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CBMissHiAuto"
+        android:text="Miss Low" />
+
+    <com.example.davidreetz.firststronghold2016scoutingapp.Counter
+        android:id="@+id/TechFoulsAuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/RGKey"
+        android:layout_marginBottom="20dp"
+        counter:text="@string/TechFouls" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dead"
+        android:id="@+id/CBDeadAuto"
+        android:layout_below="@+id/CBMissLoAuto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

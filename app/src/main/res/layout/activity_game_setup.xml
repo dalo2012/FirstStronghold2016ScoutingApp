@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.davidreetz.firststronghold2016scoutingapp.GameSetup">
+
+    <EditText
+        android:id="@+id/ETMatchNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/ETMatchNum"
+        android:inputType="number"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:id="@+id/STeam"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ETMatchNum"></Spinner>
+
+    <ImageView
+        android:id="@+id/IMGcheval_de_frise"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/cheval_de_frise" />
+
+    <ImageView
+        android:id="@+id/IMGporticullis"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_toRightOf="@+id/IMGcheval_de_frise"
+        android:layout_alignBaseline="@+id/IMGcheval_de_frise"
+        android:src="@drawable/porticullis" />
+
+    <ImageView
+        android:id="@+id/IMGmoat"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_below="@+id/IMGcheval_de_frise"
+        android:layout_alignLeft="@+id/IMGcheval_de_frise"
+        android:src="@drawable/moat" />
+
+    <ImageView
+        android:id="@+id/IMGramparts"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_toRightOf="@+id/IMGmoat"
+        android:layout_alignTop="@+id/IMGmoat"
+        android:src="@drawable/ramparts" />
+
+    <ImageView
+        android:id="@+id/IMGsally_port"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_below="@+id/IMGmoat"
+        android:layout_alignLeft="@+id/IMGmoat"
+        android:src="@drawable/sally_port" />
+
+    <ImageView
+        android:id="@+id/IMGdrawpbridge"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_toRightOf="@+id/IMGsally_port"
+        android:layout_alignTop="@+id/IMGsally_port"
+        android:src="@drawable/drawbridge" />
+
+    <ImageView
+        android:id="@+id/IMGrough_terrain"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_below="@+id/IMGsally_port"
+        android:layout_alignLeft="@+id/IMGsally_port"
+        android:src="@drawable/rough_terrain" />
+
+    <ImageView
+        android:id="@+id/IMGstone_wall"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_toRightOf="@+id/IMGrough_terrain"
+        android:layout_alignTop="@+id/IMGrough_terrain"
+        android:src="@drawable/stone_wall" />
+
+    <ImageView
+        android:id="@+id/IMGWholeFieldSetup"
+        android:layout_width="750dp"
+        android:layout_height="500dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/blue_half" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/IMGWholeFieldSetup"
+        android:layout_alignTop="@+id/IMGWholeFieldSetup"
+        android:layout_alignBottom="@+id/IMGWholeFieldSetup"
+        android:layout_alignRight="@+id/IMGWholeFieldSetup">
+
+        <ImageView
+            android:id="@+id/IMGdefense1"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_alignTop="@+id/IMGLoBarSetup"
+            android:layout_toRightOf="@+id/IMGLoBarSetup"
+            android:layout_toEndOf="@+id/IMGLoBarSetup" />
+
+        <ImageView
+            android:id="@+id/IMGdefense2"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_alignTop="@+id/IMGdefense1"
+            android:layout_toRightOf="@+id/IMGdefense1"
+            android:layout_toEndOf="@+id/IMGdefense1" />
+
+        <ImageView
+            android:id="@+id/IMGdefense3"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_alignTop="@+id/IMGdefense2"
+            android:layout_toRightOf="@+id/IMGdefense2"
+            android:layout_toEndOf="@+id/IMGdefense2" />
+
+        <ImageView
+            android:id="@+id/IMGdefense4"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_alignTop="@+id/IMGdefense3"
+            android:layout_toRightOf="@+id/IMGdefense3"
+            android:layout_toEndOf="@+id/IMGdefense3" />
+
+        <ImageView
+            android:id="@+id/IMGLoBarSetup"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:src="@drawable/low_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="125dp"
+            android:layout_marginLeft="125dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/BToAutonomous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BToAutonomous"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Game Setup"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome, "
+        android:id="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="YOURNAMEHERE"
+        android:id="@+id/TVNameSetup"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="! You&apos;re "
+        android:id="@+id/textView4"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/TVNameSetup"
+        android:layout_toEndOf="@+id/TVNameSetup" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ROBOT"
+        android:id="@+id/TVRobotSetup"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not you?"
+        android:id="@+id/BNotMe"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/TVRobotSetup"
+        android:layout_toEndOf="@+id/TVRobotSetup" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Sent to Stuart"
+        android:id="@+id/BSent"
+        android:background="#ff0000"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/IMGporticullis"
+        android:layout_toEndOf="@+id/IMGporticullis">
+
+        <RadioButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:id="@+id/RBRed"
+            android:background="#ff0000" />
+
+        <RadioButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Blue"
+            android:id="@+id/RBBlue"
+            android:background="#0000ff" />
+    </RadioGroup>
+
+</RelativeLayout>

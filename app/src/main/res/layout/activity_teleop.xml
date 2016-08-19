@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:counter="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.davidreetz.firststronghold2016scoutingapp.Teleop"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/IMGhalfFieldTeleop"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/red_half" />
+
+    <RelativeLayout
+
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_alignRight="@+id/IMGhalfFieldTeleop"
+        android:layout_alignBottom="@+id/IMGhalfFieldTeleop"
+        android:layout_alignTop="@+id/IMGhalfFieldTeleop"
+        android:layout_alignLeft="@+id/IMGhalfFieldTeleop">
+
+
+        <RelativeLayout
+            android:layout_width="377dp"
+            android:layout_height="500dp"
+            android:layout_marginLeft="23dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/Empty1Tele"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/LoBar1Tele"
+                android:layout_marginBottom="150dp" />
+
+            <ImageView
+                android:id="@+id/Empty2Tele"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_toRightOf="@+id/Empty1Tele"
+                android:layout_alignBottom="@+id/Empty1Tele" />
+
+            <ImageView
+                android:id="@+id/Empty3Tele"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_toRightOf="@+id/Empty2Tele"
+                android:layout_alignBottom="@+id/Empty2Tele" />
+
+            <ImageView
+                android:id="@+id/Empty4Tele"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_toRightOf="@+id/Empty3Tele"
+                android:layout_alignBottom="@+id/Empty3Tele" />
+
+            <ImageView
+                android:id="@+id/LoBar1Tele"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@+id/Empty4Tele"
+                android:src="@drawable/low_bar" />
+
+            <Button
+                android:id="@+id/BObstacle1Tele"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAIL"
+                android:layout_alignLeft="@+id/LoBar1Tele"
+                android:layout_above="@+id/Empty1Tele" />
+
+            <Button
+                android:id="@+id/BObstacle2Tele"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAIL"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/Empty2Tele"
+                android:layout_alignRight="@+id/Empty1Tele" />
+
+            <Button
+                android:id="@+id/BObstacle3Tele"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAIL"
+                android:layout_above="@+id/Empty3Tele"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/BObstacle4Tele"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAIL"
+                android:layout_alignLeft="@+id/Empty3Tele"
+                android:layout_below="@+id/Empty4Tele" />
+
+            <Button
+                android:id="@+id/BObstacle5Tele"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAIL"
+                android:gravity="center_horizontal"
+                android:layout_above="@id/Empty4Tele"
+                android:layout_alignParentRight="true" />
+
+            <Button
+                android:id="@+id/BStuckTele"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stuck"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Un-Stuck"
+                android:id="@+id/UnStuck"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/BStuckTele"
+                android:layout_toEndOf="@+id/BStuckTele" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TVObs1"
+                android:layout_above="@+id/BObstacle1Tele"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="Obstacle 1"
+                android:background="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TVObs3"
+                android:text="Obstacle 3"
+                android:background="#ffffff"
+                android:layout_above="@+id/BObstacle3Tele"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TVObs5"
+                android:layout_above="@+id/BObstacle5Tele"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:text="Obstacle 5"
+                android:background="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TVObs2"
+                android:text="Obstacle 2"
+                android:background="#ffffff"
+                android:layout_below="@+id/BObstacle2Tele"
+                android:layout_alignLeft="@+id/BObstacle2Tele"
+                android:layout_alignStart="@+id/BObstacle2Tele" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TVObs4"
+                android:text="Obstacle 4"
+                android:background="#ffffff"
+                android:layout_below="@+id/BObstacle4Tele"
+                android:layout_alignRight="@+id/BObstacle4Tele" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="undo"
+                android:id="@+id/BUndo"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/CBDeadTele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CBDeadTele" />
+
+    <CheckBox
+        android:id="@+id/CBIntemittent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CBDeadTele"
+        android:layout_alignParentLeft="true"
+        android:text="Intermittent" />
+
+    <CheckBox
+        android:id="@+id/CBTipped"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CBIntemittent"
+        android:text="@string/CBTipped" />
+
+    <Button
+        android:id="@+id/BEndGameAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BEndGameAction"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/TVEndgame" />
+
+    <com.example.davidreetz.firststronghold2016scoutingapp.Counter
+        android:id="@+id/HiGoalTele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        counter:text="Hi Goal"
+        android:layout_below="@+id/HiGoalMissTele"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:id="@+id/FinishButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:id="@+id/CBBallStuck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CBTipped"
+        android:text="Stuck On Ball" />
+
+    <CheckBox
+        android:id="@+id/CBCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CBBallStuck"
+        android:text="Captured" />
+
+
+    <CheckBox
+        android:id="@+id/CBBreach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CBCapture"
+        android:text="Breached" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="End game action:"
+        android:id="@+id/TVEndgame"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp" />
+
+    <com.example.davidreetz.firststronghold2016scoutingapp.Counter
+        android:id="@+id/LoGoalTele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        counter:text="Lo Goal"
+        android:layout_alignTop="@+id/HiGoalTele"
+        android:layout_toRightOf="@+id/HiGoalTele"
+        android:layout_marginLeft="40dp"
+        android:layout_toEndOf="@+id/HiGoalTele" />
+
+    <com.example.davidreetz.firststronghold2016scoutingapp.Counter
+        android:id="@+id/LoGoalMissTele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        counter:text="Miss Lo"
+        android:layout_above="@+id/LoGoalTele"
+        android:layout_alignLeft="@+id/LoGoalTele"
+        android:layout_alignStart="@+id/LoGoalTele"></com.example.davidreetz.firststronghold2016scoutingapp.Counter>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Defended"
+        android:id="@+id/Defended"
+        android:layout_below="@+id/CBBreach" />
+
+    <com.example.davidreetz.firststronghold2016scoutingapp.Counter
+        android:id="@+id/BlockedShots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        counter:text="Blocked Shots"
+        android:layout_marginLeft="28dp"
+        android:layout_alignTop="@+id/TechFoulsTele"
+        android:layout_toRightOf="@+id/TechFoulsTele"
+        android:layout_toEndOf="@+id/TechFoulsTele"></com.example.davidreetz.firststronghold2016scoutingapp.Counter>
+
+    <com.example.davidreetz.firststronghold2016scoutingapp.Counter
+        android:id="@+id/TechFoulsTele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        counter:text="@string/TechFouls"
+        android:layout_below="@+id/HiGoalTele"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></com.example.davidreetz.firststronghold2016scoutingapp.Counter>
+
+    <com.example.davidreetz.firststronghold2016scoutingapp.Counter
+        android:id="@+id/HiGoalMissTele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        counter:text="Miss Hi"
+        android:layout_below="@+id/Defended"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

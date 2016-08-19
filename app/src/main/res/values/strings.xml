@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">First Stronghold 2016 Scouting App</string>
+    <string name="TVLoginInstruct">Please sign in</string>
+    <string name="ETScoutName">Scout Name</string>
+    <string name="ETMatchNum">Match Number</string>
+    <string name="BToFieldLayout">Log In</string>
+    <string name="imgHalfFieldAuto">Half Field</string>
+    <string name="CBShotLowGoalAuto">Shot Low Goal?</string>
+    <string name="CBShotHighGoalAuto">Shot High Goal?</string>
+    <string name="RadioKeyPosition">Starting Position</string>
+    <string name="RBSpyBot">SpyBot</string>
+    <string name="BToTeleop">To Teleop</string>
+    <string name="RBObstacleAuto">No Interaction</string>
+    <string name="BToAutonomous">To Auto!</string>
+    <string name="CBDeadTele">Dead</string>
+    <string name="BObstacle1Tele">Obstacle 1</string>
+    <string name="BObstacle2Tele">Obstacle 2</string>
+    <string name="BObstacle3Tele">Obstacle 3</string>
+    <string name="BObstacle4Tele">Obstacle 4</string>
+    <string name="BObstacle5Tele">Obstacle 5</string>
+    <string name="CBTipped">Tipped</string>
+    <string name="CBDefender">Defender</string>
+    <string name="CBBallStart">Started with Ball</string>
+    <string name="CBCarryAuto">Carry</string>
+    <string name="BEndGameAction">No Action</string>
+    <string name="TechFouls">Tech Fouls</string>
+</resources>
